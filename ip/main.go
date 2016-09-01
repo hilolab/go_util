@@ -135,6 +135,7 @@ func (this *IPInfo) FindIp(ipv4 string) Result {
 				this.Offset = this.getLong(3)
 				area = this.ReadString()
 			} else {
+				this.Offset--
 				area = this.ReadString()
 			}
 		} else {
