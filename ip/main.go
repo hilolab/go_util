@@ -151,7 +151,7 @@ func (this *IPInfo) FindIp(ipv4 string) Result {
 	} else {
 		this.Offset--
 		country = this.ReadString()
-		area = this.ReadString()
+		//area = this.ReadString()
 	}
 
 	result.Country = this.decode.ConvertString(country)
